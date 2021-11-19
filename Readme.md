@@ -25,20 +25,23 @@ username:travelplan
 password:123546
 seed file in task folder
 ### dependencies
-"@khanacademy/tota11y": "^0.2.0",
-"axios": "^0.21.0",
-"bcryptjs": "^2.4.3",
-"connect-flash": "^0.1.1",
-"cookie-parser": "^1.4.5",
-"express": "^4.17.1",
-"express-handlebars": "^5.2.0",
-"express-sanitizer": "^1.0.5",
-"express-session": "^1.17.1",
-"fuse.js": "^6.4.3",
-"handlebars": "^4.7.6",
-"mongodb": "^3.6.3",
-"stream-json": "^1.7.1",
-"xss": "^1.0.8"
+"@khanacademy/tota11y": "^0.2.0",<br/>
+"axios": "^0.21.0",<br/>
+"bcryptjs": "^2.4.3"<br/>
+"connect-flash": "^0.1.1",<br/>
+"cookie-parser": "^1.4.5",<br/>
+"express": "^4.17.1",<br/>
+"express-handlebars": "^5.2.0",<br/>
+"express-sanitizer": "^1.0.5",<br/>
+"express-session": "^1.17.1",<br/>
+"fuse.js": "^6.4.3",<br/>
+"handlebars": "^4.7.6",<br/>
+"mongodb": "^3.6.3",<br/>
+"stream-json": "^1.7.1",<br/>
+"xss": "^1.0.8"<br/>
 ### start service
+```
 npm install
 npm start 
+```
+
