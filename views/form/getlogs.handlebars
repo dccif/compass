@@ -1,0 +1,20 @@
+<main>
+    <div id="getlogsTitle">{{title}}</div>
+    <div id="getlogsFeel">{{feel}}</div>
+    <div>Review:</div>
+    <ul id="reviewList">
+        {{#each reviews}}
+            <div>----------------</div>
+            <dt>{{this.username}}: {{this.content}}<br></dt>
+            <dt>Created: {{this.date}}<br></dt>
+            <div id="replycontent{{this._id}}"><label for="replyinput{{this._id}}"></label><input id="replyinput{{this._id}}" type='text' name='reply-content' /></div>
+            <dt><button id="replyList2{{this._id}}" class="replyList2">Write replies</button></dt>
+            <dt><button id="replyList1{{this._id}}" class="replyList1">View replies</button></dt>
+            <ul id="replyList{{this._id}}" class="replyList">
+            </ul>
+            <div>----------------</div>  
+        {{/each}}
+    </ul>
+</main>
+
+{{!-- id="'reviewlist'" + {{this}}._id class={{this}}._id --}}

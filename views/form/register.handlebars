@@ -1,0 +1,36 @@
+<main>
+    <h1>Please register</h1>
+    <form action="/login/register" method="POST" id="register-form">
+        <div>
+            <label for="user-username">username: </label>
+            <input id="userName" class="form-control mb-3" type="text" name="userNames"/>
+        </div>
+        <div>
+            <label for="user-lastname">lastName: </label>
+            <input id="lastName" class="form-control mb-3" type="text" name="lastNames"/>
+        </div>
+        <div>
+            <label for="user-firstname">firstName: </label>
+            <input id="firstName" class="form-control mb-3" type="text" name="firstNames"/>
+        </div>
+        <div>
+            <label for="user-email">Email: </label>
+            <input id="userEmail" class="form-control mb-3" type="text" name="userEmails"/>
+        </div>
+        <div>
+            <label for="user-password">password: </label>
+            <input id="password" class="form-control mb-3" type="password" name="passwords"/>
+        </div>
+        <div>
+            <label for="confirm-password">confirmPassword: </label>
+            <input id="confirmPassword" class="form-control mb-3" type="password" name="confirms"/>
+            {{#if status1}}
+                <div id="registering-checking" class="compare-password">{{compare}}</div>
+            {{/if}}
+            {{!-- <li>{{errors}}</li> --}}
+            </div>
+        <div>
+		    <button type="submit" name="registers" id="button">Submit</button>
+	    </div>
+    </form>
+</main>

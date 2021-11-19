@@ -1,0 +1,75 @@
+<script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDs4Mz7MR151AM8yNWpad7IWWdDxSrq-as&map_ids=27e84ad7986a2e02&callback=initMap&libraries=places"
+        defer></script>
+<link rel="stylesheet" href="/public/css/map.css">
+<div class="container allRes">
+    <div class="row">
+        <h1>Find nearby Restaurant</h1>
+    </div>
+    <div id="mapResult" class="allRes2 row">
+        <div class="hotel-search container row">
+            <div id="findhotels" class="container">Find meals in:</div>
+
+            <div id="locationField">
+                <label for="autocomplete">City name</label>
+                <input class="form-control" id="autocomplete" placeholder="Enter a city" type="text"/>
+            </div>
+
+            <div id="controls">
+                <label for="country">Country</label><select class="form-control" id="country">
+                <option value="all">All</option>
+                <option value="au">Australia</option>
+                <option value="br">Brazil</option>
+                <option value="ca">Canada</option>
+                <option value="fr">France</option>
+                <option value="de">Germany</option>
+                <option value="mx">Mexico</option>
+                <option value="nz">New Zealand</option>
+                <option value="it">Italy</option>
+                <option value="za">South Africa</option>
+                <option value="es">Spain</option>
+                <option value="pt">Portugal</option>
+                <option value="us" selected>U.S.A.</option>
+                <option value="uk">United Kingdom</option>
+                <option value="cn">China</option>
+            </select>
+            </div>
+        </div>
+
+        <div id="map" class="gmnoprint allRes"></div>
+
+        <div id="listing" class="allRes">
+            <table id="resultsTable">
+                <tbody id="results"></tbody>
+            </table>
+        </div>
+
+        <div style="display: none">
+            <div id="info-content">
+                <table>
+                    <tr id="iw-url-row" class="iw_table_row">
+                        <td id="iw-icon" class="iw_table_icon"></td>
+                        <td id="iw-url"></td>
+                    </tr>
+                    <tr id="iw-address-row" class="iw_table_row">
+                        <td class="iw_attribute_name">Address:</td>
+                        <td id="iw-address"></td>
+                    </tr>
+                    <tr id="iw-phone-row" class="iw_table_row">
+                        <td class="iw_attribute_name">Telephone:</td>
+                        <td id="iw-phone"></td>
+                    </tr>
+                    <tr id="iw-rating-row" class="iw_table_row">
+                        <td class="iw_attribute_name">Rating:</td>
+                        <td id="iw-rating"></td>
+                    </tr>
+                    <tr id="iw-website-row" class="iw_table_row">
+                        <td class="iw_attribute_name">Website:</td>
+                        <td id="iw-website"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="/public/js/MapSearch.js"></script>

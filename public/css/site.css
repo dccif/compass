@@ -1,0 +1,96 @@
+html, body {
+	font-size: 15pt;
+	font-family: Times;
+}
+
+h1 {
+	color: blue;
+}
+
+#search-plans {
+	text-align: center;
+	color: blue;
+}
+
+#getlogsTitle {
+	text-align: center;
+	color: blue;
+}
+
+#inspiration {
+	color: blue;
+}
+
+#getlogsFeel {
+	text-align: center;
+	color: blue;
+}
+
+/* #button_logs {
+	background-color: blue;
+	font-size: 16px;
+	border-radius: 8px;
+    padding: 10px 25px;
+	text-align: center;
+	color: white;
+	display: inline-block;
+	width: 250px;
+	text-align: center;
+} */
+
+#user1 {
+	color: blue;
+	font-size: 25pt;
+}
+
+#search-plans label {
+	text-align: center;
+}
+
+#plans-searchbutton {
+	text-align: center;
+}
+
+#addplanbutton {
+	text-align: center;
+}
+
+#plan-List {
+	text-align: center;
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+title {
+	background: white;
+}
+
+footer {
+	font-family: Times;
+}
+
+.more-around, .go-here {
+	margin-bottom: 30px;
+	margin-right: 20px;
+	font-size: 20px;
+}
+
+/* .recommend-pic, .more-around-div {
+	margin-bottom: 20px;
+} */
+
+.location-p {
+	display: inline;
+}
+
+.image {
+	width: "384px";
+	height: "216px";
+	display: block;
+}
+
+.dropdown::marker {
+	display: none;
+}

@@ -1,0 +1,16 @@
+<div class="container">
+    <div>Hotel</div>
+    {{#each location}}
+        <ul class="list-group">
+            <li class="list-group-item">{{name}}</li>
+        </ul>
+        {{#each ../hotels}}
+            {{#each this}}
+                <ul class="list-group">{{this.name}}</ul>
+                <li class="list-group-item"><img src={{this.thumbnailUrl}} alt={{this.name}}></li>
+                <li class="list-group-item">Rating: {{this.guestReviews.rating}}</li>
+            {{/each}}
+        {{/each}}
+        <p></p>
+    {{/each}}
+</div>

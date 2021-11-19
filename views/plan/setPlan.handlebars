@@ -1,0 +1,38 @@
+<main>
+    <h1>Make Your Own Plan</h1>
+    <form id="placeForm">
+        <div>
+            <label for="startDate">date to start</label>
+            <input class="form-control w-25 mb-3" type="date" id="startDate" />
+        </div>
+        <!-- <div>
+        <label for="startPlace">departure place</label>
+        <input type="text" id="startPlace" />
+    </div> -->
+        <div id="planList">
+            <h3 class="mb-3">Plan List</h3>
+            <label>The first place in your plan will be where you start rather than a poi</label>
+            <ol id="nodeList"></ol>
+        </div>
+        <div id="searchBox">
+            <label for="searchTerm">Search Place: </label>
+            <input class="form-control w-25 mb-3" type="text" id="searchTerm" />
+            <button id="searchPlace" class="btn btn-outline-primary mb-3">Search</button>
+            <!-- <button id="addPlace">Add place</button> -->
+        </div>
+        <div id="resultBox">
+            <h3>Search Result</h3>
+            <ul id="resultList">
+
+            </ul>
+            <div id="errorBox"></div>
+        </div>
+        <button type="submit" class="btn btn-outline-primary">Make Plan!</button>
+        <button id="savePlan" class="btn btn-outline-primary">save plan</button>
+    </form>
+    <div id="scheme">
+
+    </div>
+    {{!-- <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script> --}}
+</main>
