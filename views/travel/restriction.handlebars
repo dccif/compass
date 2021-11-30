@@ -1,0 +1,56 @@
+<main class="mx-3 mb-3">
+    <h1>Have no idea about where to go? This is restriction page</h1>
+    <div>
+        <button class="btn btn-outline-primary" onclick="location.href='http://localhost:3000/plan/make_plan'">Already
+            know where to go? Click this!
+        </button>
+    </div>
+    <div id="planlist_u">
+        <div>
+            <label for="startDate_u">choose your start date:</label>
+            <input id="startDate_u" class="form-control w-25 mb-3" type="date"/>
+        </div>
+        <div>
+            <label for="searchTerm_u">search your departure place:</label>
+            <input id="searchTerm_u" class="form-control w-25 mb-3" type="text"/>
+            <button id="search_u" class="btn btn-outline-primary">search</button>
+        </div>
+        <div id="errorBox_u"></div>
+        <ul id="searchResult_u">
+
+        </ul>
+        <h3>Plan List</h3>
+        <div id="startPlace_u">
+
+        </div>
+        <ol id="placeList_u">
+
+        </ol>
+        <button id="makePlan_u" class="btn btn-outline-primary">make plan!</button>
+    </div>
+    <div id="scheme"></div>
+
+    <h2>Recommend places</h2>
+    <h3>(We suggest do not add more than 3 places at one time)</h3>
+    <div id="recommendPics-div-origin">
+        {{#each picsData}}
+            <div class="recommend-pic">
+                <img src="{{this.url.source_url}}" alt="{{this.name}}" width="384" height="216" class="image">
+                <p>{{this.name}}</p>
+                <p>Duration: {{this.duration}} minutes</p>
+                <ul>
+                    <li>Latitude: {{this.coordinates.latitude}}</li>
+                    <li>Longitude: {{this.coordinates.longitude}}</li>
+                </ul>
+                <span>Location: </span>
+                <p class="location-p">{{this.location_id}}</p>
+                <p>Description: {{this.snippet}}</p>
+                <button class="more-around btn btn-outline-primary">See more around this place</button>
+                <button class="go-here btn btn-outline-primary">Like this place? Add to plan!</button>
+            </div>
+        {{/each}}
+    </div>
+
+    <div id="recommendPics-div-more"></div>
+    <button id="more-button" class="btn btn-outline-primary">More</button>
+</main>
