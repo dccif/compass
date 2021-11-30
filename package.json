@@ -1,5 +1,5 @@
 {
-  "name": "travel-consultant",
+  "name": "compass",
   "version": "1.0.0",
   "description": "A website that can help users to make a travel plan easier",
   "main": "app.js",
@@ -25,7 +25,7 @@
   "homepage": "https://github.com/csu-iteam/CS-546-Final-Project#readme",
   "dependencies": {
     "@khanacademy/tota11y": "^0.2.0",
-    "axios": "^0.21.0",
+    "axios": "^0.21.4",
     "bcryptjs": "^2.4.3",
     "connect-flash": "^0.1.1",
     "cookie-parser": "^1.4.5",

@@ -4,6 +4,7 @@ const log = require('./logs');
 const plan = require('./plans');
 const reply = require('./replies');
 const planGenerator = require('./planGenerator');
+const guideline = require('./guidelines');
 // const airport IATA
 const cityQuery = require('./cityQuery');
 
@@ -15,6 +16,7 @@ module.exports = {
     plans: plan,
     replies: reply,
     planGenerator: planGenerator,
+    guideline: guideline,
     // airports
     cityQuery: cityQuery
 };

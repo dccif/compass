@@ -17,5 +17,6 @@ module.exports = {
     logs: getCollectionFn('logs'),
     plans: getCollectionFn('plans'),
     reviews: getCollectionFn('reviews'),
-    replies: getCollectionFn('replies')
+    replies: getCollectionFn('replies'),
+	guidelines:getCollectionFn('guidelines')
 };
