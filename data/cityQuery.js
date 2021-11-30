@@ -3,6 +3,7 @@ const streamArray = require('stream-json/streamers/StreamArray')
 const Fuse = require('fuse.js')
 const fs = require('fs')
 const hotelApi = require('../config/hotelApi')
+const {response} = require("express");
 
 // read Airport JSON
 let airportData = []
@@ -34,7 +35,7 @@ function getAirportNameList(data) {
 }
 
 function getCityDestinationIdlList(data) {
-    cityList = data.suggestions.find(o => {
+    let cityList = data.suggestions.find(o => {
         return o.group === 'CITY_GROUP'
     }).entities
     let desIdArray = []
@@ -155,10 +156,37 @@ async function queryAirTicket(paramsObj) {
     })
 }
 
+async function combineCityQuery(paramsObj) {
+    if (paramsObj.hasOwnProperty('city')) {
+        return await axios.post('https://countriesnow.space/api/v0.1/countries/population/cities', paramsObj).then(response => {
+            return {city: response.data.data.city, country: response.data.data.country}
+        })
+    }
+}
+
+async function cityRestriction(cityObj) {
+    let cityWithCounty = await combineCityQuery(cityObj)
+    let cityCountryIso2 = await axios.post('https://countriesnow.space/api/v0.1/countries/iso', cityWithCounty).then(response => {
+        return response.data.data.Iso2
+    })
+
+    let requiredUrl = `https://test.api.amadeus.com/v1/duty-of-care/diseases/covid19-area-report?countryCode=${cityCountryIso2}`
+
+    let config = {
+        headers: {Authorization: `Bearer ${await amadeusGetToken()}`}
+    }
+    return await axios.get(requiredUrl, config).then(async (response) => {
+        //console.log(response.data)
+        return response.data.data
+    })
+
+}
+
 module.exports = {
     queryCity,
     getIATAList,
     getCityAirportIATA,
     getCityDestinationIdlList,
-    queryAirTicket
+    queryAirTicket,
+    cityRestriction
 }
