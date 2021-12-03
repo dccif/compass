@@ -18,5 +18,7 @@ module.exports = {
     plans: getCollectionFn('plans'),
     reviews: getCollectionFn('reviews'),
     replies: getCollectionFn('replies'),
-	guidelines:getCollectionFn('guidelines')
+	guidelines:getCollectionFn('guidelines'),
+	
+
 };

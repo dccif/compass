@@ -23,4 +23,21 @@ router.post('/guideline', async (req, res) => {
     }
 })
 
+router.get('/travelguideline/iceland', async (req, res) => {
+   
+    res.render('travelguideline/iceland');
+})
+
+router.get('/travelguideline/norway', async (req, res) => {
+   
+    res.render('travelguideline/norway');
+})
+
+router.get('/travelguideline/canada', async (req, res) => {
+   
+    res.render('travelguideline/canada');
+})
+
+
+
 module.exports = router;

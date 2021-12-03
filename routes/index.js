@@ -5,12 +5,15 @@ const recommendPageRoutes = require('./recommendPage');
 const planRoutes=require('./planGenerator');
 const guidelineRoutes=require('./guideline');
 
+
 const constructorMethod = (app) => {
     app.use('/price', priceRoutes);
     app.use('/login', login);
     app.use('/recommend', recommendPageRoutes);
     app.use('/plan',planRoutes);
     app.use('/travelguideline',guidelineRoutes);
+
+    
 
     app.use('*', (req, res) => {
         res.redirect('/recommend')

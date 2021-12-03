@@ -17,6 +17,7 @@ module.exports = {
     replies: reply,
     planGenerator: planGenerator,
     guideline: guideline,
+
     // airports
     cityQuery: cityQuery
 };
