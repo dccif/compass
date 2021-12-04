@@ -26,6 +26,33 @@ h1 {
 	color: blue;
 }
 
+.Private-Title{
+	background-color: rgb(236, 174, 93);
+	font-style: italic;
+	font-weight: bold;
+	padding: 26px;
+}
+.person-account{
+	float: right;
+}
+.title{
+	color: white;
+	font-size: 30px;
+}
+
+.logincard{
+	background-color: rgb(221, 221, 221);
+	margin-top: 60px;
+	margin-left: 300px;
+	margin-right: 300px;
+}
+
+.login-title{
+	background-color: rgb(236, 174, 93);
+	font-style: italic;
+	font-weight: bold;
+	padding: 26px;
+}
 /* #button_logs {
 	background-color: blue;
 	font-size: 16px;
@@ -93,4 +120,44 @@ footer {
 
 .dropdown::marker {
 	display: none;
+}
+
+.log-div{
+	text-align: center;
+	width: 200px;
+	height: 200px;
+	margin-top: 200px;
+	margin-left: 450px;
+	background-color: rgb(241, 217, 184);
+}
+
+.plans-div{
+	text-align: center;
+	width: 200px;
+	height: 200px;
+	margin-top: 200px;
+	margin-left: 50px;
+	background-color: rgb(236, 174, 86);
+}
+
+.reviews-div{
+	text-align: center;
+	width: 200px;
+	height: 200px;
+	margin-top: 200px;
+	margin-left: 50px;
+	background-color: rgb(233, 144, 20);
+}
+
+.likedlogs-div{
+	text-align: center;
+	width: 200px;
+	height: 200px;
+	margin-top: 200px;
+	margin-left: 50px;
+	background-color: rgb(235, 86, 0);
+}
+
+.logBtn,.planBtn,.reviewsBtn,.likedlogsBtn{
+	margin-top: 50px;
 }
