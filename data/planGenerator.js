@@ -285,7 +285,7 @@ async function getFlight(startIata, endIata, startDate, startTime) {
     let paramsObj = {
         originLocationCode: startIata,
         destinationLocationCode: endIata,
-        departureDate: `${startDate.getFullYear()}-${("0" + (startDate.getMonth() + 1)).slice(-2)}-${startDate.getDate()}`,
+        departureDate: `${startDate.getFullYear()}-${("0" + (startDate.getMonth() + 1)).slice(-2)}-${('0'+ startDate.getDate()).slice(-2)}`,
         adults: 1,
         max: 20
     }
@@ -316,7 +316,7 @@ async function getCityTraffic(startCoordinates, endCoordinates) {
     //baidu api
     //const { data } = await axios.get(`http://api.map.baidu.com/direction_abroad/v1/transit?origin=${startCoordinates.latitude.toFixed(6)},${startCoordinates.longitude.toFixed(6)}&destination=${endCoordinates.latitude.toFixed(6)},${endCoordinates.longitude.toFixed(6)}&coord_type=wgs84&ak=up1toaVyKpIE6fXc9dqc4eItjbhICylS`);
     //google api
-    let { data } = await axios.get(`https://maps.googleapis.com/maps/api/directions/json?origin=${startCoordinates.latitude.toFixed(6)},${startCoordinates.longitude.toFixed(6)}&destination=${endCoordinates.latitude.toFixed(6)},${endCoordinates.longitude.toFixed(6)}&key=AIzaSyDkFqsopNObdSVwPslxnZEFBOG6AVXeVgg&mode=traffic`);
+    let { data } = await axios.get(`https://maps.googleapis.com/maps/api/directions/json?origin=${startCoordinates.latitude.toFixed(6)},${startCoordinates.longitude.toFixed(6)}&destination=${endCoordinates.latitude.toFixed(6)},${endCoordinates.longitude.toFixed(6)}&key=AIzaSyDeLRkXzjaw-9AZgnaxLtMmBb5ROWnbvBc&mode=traffic`);
     //console.log(data);
     //test data
     // let data = {
@@ -704,7 +704,7 @@ async function getCityIata(cityName) {
 }
 let i = 0;
 async function getPoi(searchTerm) {
-    let {data} =await axios.get(`https://maps.googleapis.com/maps/api/place/findplacefromtext/json?input=${searchTerm}&inputtype=textquery&fields=photos,formatted_address,name,plus_code,geometry&language=en&key=AIzaSyDkFqsopNObdSVwPslxnZEFBOG6AVXeVgg`);
+    let {data} =await axios.get(`https://maps.googleapis.com/maps/api/place/findplacefromtext/json?input=${searchTerm}&inputtype=textquery&fields=photos,formatted_address,name,plus_code,geometry&language=en&key=AIzaSyDeLRkXzjaw-9AZgnaxLtMmBb5ROWnbvBc`);
 
     // let data = {
     //     "candidates": [

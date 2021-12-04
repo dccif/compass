@@ -12,22 +12,25 @@
             </div>
         </form>
         {{#if hasInfo}}
-            <p>Summary:</p>
+            <h2>Summary:</h2>
             {{{info.summary}}}
-            <p>Area Restrictions:</p>
-            {{{info.areaRestrictions.text}}}
-            <p>Area Access Restriction:</p>
-            {{{info.areaAccessRestriction.text}}}
-            <p>Entry:</p>
-            {{{info.entry.text}}}
-            <p>Disease Testing:</p>
-            {{{info.diseaseTesting.text}}}
-            <p>Quarantine Modality</p>
-            {{{info.quarantineModality.text}}}
-            <p>Other Restriction</p>
-            {{{info.otherRestriction.text}}}
-            <p>Disease Vaccination</p>
-            {{{info.diseaseVaccination.text}}}
+            <h2>Area Restrictions:</h2>
+            {{#each info.areaRestrictions}}
+                {{{this.text}}}
+            {{/each}}
+            <h1>Area Access Restriction:</h1>
+            <h2>Entry:</h2>
+            {{{info.areaAccessRestriction.entry.text}}}
+            <h2>Disease Testing:</h2>
+            {{{info.areaAccessRestriction.diseaseTesting.text}}}
+            <h2>Quarantine Modality</h2>
+            {{{info.areaAccessRestriction.quarantineModality.text}}}
+            <h2>Other Restriction</h2>
+            {{{info.areaAccessRestriction.otherRestriction.text}}}
+            <h2>Disease Vaccination</h2>
+            {{{info.areaAccessRestriction.diseaseVaccination.text}}}
+            <h2>Area Policy</h2>
+            {{{info.areaPolicy.text}}}
         {{/if}}
     </main>
 </main>
