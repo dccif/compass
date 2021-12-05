@@ -620,3 +620,15 @@ H4 {
 .logBtn,.planBtn,.reviewsBtn,.likedlogsBtn{
 	margin-top: 50px;
 }
+
+.dateForm{
+	margin-top: 100px;
+	margin-left: 20%;
+	background-color: rgb(243, 164, 156);
+	width: 1000px;
+}
+
+.innerDateform{
+	margin-left: 30%;
+	
+}

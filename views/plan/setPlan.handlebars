@@ -1,8 +1,12 @@
 <main>
-    <h1>Make Your Own Plan</h1>
+     <div class="Private-Title" id="user1">
+        <h1 style="color: white;">Make Your Own Plan</h1>
+        </div>
+    <div class="dateForm">
+        <div class="innerDateform">
     <form id="placeForm">
         <div>
-            <label for="startDate">date to start</label>
+            <label for="startDate" style="font-size: 28px; font-style:italic">date to start</label>
             <input class="form-control w-25 mb-3" type="date" id="startDate" />
         </div>
         <!-- <div>
@@ -10,7 +14,7 @@
         <input type="text" id="startPlace" />
     </div> -->
         <div id="planList">
-            <h3 class="mb-3">Plan List</h3>
+            <h3 class="mb-3" style="font-size: 32px; font-style:italic">Plan List</h3>
             <label>The first place in your plan will be where you start rather than a poi</label>
             <ol id="nodeList"></ol>
         </div>
@@ -30,6 +34,9 @@
         <button type="submit" class="btn btn-outline-primary">Make Plan!</button>
         <button id="savePlan" class="btn btn-outline-primary">save plan</button>
     </form>
+    </div>
+    </div>
+
     <div id="scheme">
 
     </div>
