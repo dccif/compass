@@ -10,19 +10,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/csu-iteam/CS-546-Final-Project.git"
+    "url": "git+https://github.com/dccif/compass.git"
   },
   "keywords": [
     "web",
     "travel",
     "plan"
   ],
-  "author": "Jianzheng Wang, Yujie He, Jingwei Li, Xietong Wei",
+  "author": "Ruiqi Wang, Ziyang Wang, Yucheng Su, Yujie He, Muyang Li, Vraj Desai",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/csu-iteam/CS-546-Final-Project/issues"
+    "url": "https://github.com/dccif/compass/issues"
   },
-  "homepage": "https://github.com/csu-iteam/CS-546-Final-Project#readme",
+  "homepage": "https://github.com/dccif/compass#readme",
   "dependencies": {
     "@khanacademy/tota11y": "^0.2.0",
     "axios": "^0.24.0",
